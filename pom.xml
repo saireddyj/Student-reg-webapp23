@@ -20,18 +20,17 @@
 		<sonar.java.binaries>target/classes</sonar.java.binaries>
 		<sonar.exclusions>**/*.css</sonar.exclusions>
 	</properties>
-
-    <distributionManagement>
-		<repository>
-        <id>nexus</id>
-        <name>Student-reg-webapp</name>
-        <url>http://13.201.169.111:8081/repository/student-reg-webapp/</url>
-    </repository>
-		<snapshotRepository>
-			<id>nexus</id>
-			<url>http://13.201.169.111:8081/repository/student-reg-webapp-snapshots/</url>
-		</snapshotRepository>
-    </distributionManagement>
+<distributionManagement>
+  <repository>
+    <id>nexus-releases</id>
+    <name>Nexus Releases</name>
+    <url>http://13.201.169.111:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus-snapshots</id>
+    <url>http://13.201.169.111:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 
 	<dependencies>
 		<dependency>
