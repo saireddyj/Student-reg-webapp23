@@ -25,11 +25,11 @@
   <repository>
     <id>nexus-releases</id>
     <name>Nexus Releases</name>
-    <url>http://13.201.169.111:8081/repository/maven-releases/</url>
+    <url>http://13.235.59.251:8081/repository/Student-webapp-reg/</url>
   </repository>
   <snapshotRepository>
     <id>nexus-snapshots</id>
-    <url>http://13.201.169.111:8081/repository/maven-snapshots/</url>
+    <url>http://13.235.59.251:8081/repository/Student-webapp-reg-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 
