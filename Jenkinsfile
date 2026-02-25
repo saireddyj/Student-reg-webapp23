@@ -14,10 +14,10 @@ pipeline {
  
     environment {
         
-        SONARQUBE_HOST = "http://172.31.8.134:9000"
+        SONARQUBE_HOST = "http://172.31.26.88:9000"
         SONARQUBE_TOKEN = credentials('SonarQubeToken')
         tomcatserverSSHUserName = "ec2-user"
-        tomcatSystemIP = "172.31.19.130"
+        tomcatSystemIP = "172.31.42.177"
         
     }
  
@@ -36,7 +36,7 @@ pipeline {
      
         stage("Sonar Scan"){
             steps {
-                sh "mvn clean verify sonar:sonar -Dsonar.host=${SONARQUBE_HOST} -Dsonar.token=${SONARQUBE_TOKEN}"
+                sh "${maven_home}/bin/mvn clean verify sonar:sonar -Dsonar.token=sqa_053bb385c0b1526c3612fb59efc2478daa63f7ba"
             }
         }
      
